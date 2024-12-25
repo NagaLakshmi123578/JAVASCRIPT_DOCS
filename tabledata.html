@@ -33,12 +33,20 @@
         </tr>
     </table>
     <h1>NAGA LAKSHMI</h1> -->
+    <h1>NAGA LAKSHMI</h1>
     <!-- <script>
        const heading=document.createElement("h1")
              heading.innerHTML="NAGA LAKSHMI"
        const some = document.getElementById("root")
           some.appendChild(heading)
     </script> -->
+
+    <script>
+debugger
+    var a=10;
+    let b=100;
+    const c=1000;
+    </script>
 </body>
 </html>
 
@@ -123,3 +131,204 @@
 
 // console.log(printValues)
 -->
+
+<!-- 
+
+
+
+// primitive => string, number, boolean, undefind, null , nan
+// non-primitive  => array, object, reg-exp
+
+let str="hello"
+// strings are immutable by nature
+// console.log(str.length)
+// console.log(str[0])
+// str.length=0
+// console.log(str)
+// str[0]="s"
+str="hell"
+console.log(str)
+
+let arr=[1,2,3]
+// arrays are mutable
+// console.log(arr.length)
+// console.log(arr[0])
+// arr.length=0
+// arr[0]=5
+arr=[4,5,6]
+console.log(arr)
+-->
+
+
+<!-- 
+
+// primitive => string, number, boolean, undefind, null , nan
+// non-primitive (reference type)  => array, object, reg-exp
+// console.log(1=="1");// it will compare only values
+
+// console.log((1).toString()==="1");// it will compare both values & types
+
+// console.log({}=={})
+
+// let a=10;// memory location is different
+
+// let b= a ;
+// a=100;
+
+// console.log(a,b)
+
+// shallow copy arr ==> 
+
+// let arr=[1,2,3,4]
+
+// let arr1=Object.assign(arr);
+// arr1.push(5,6,7)
+// console.log(arr1, arr)
+
+// deep copy
+
+// let arr=[1,2]
+// let arr1=Object.assign([],arr)
+// arr1.push(3,4)
+// console.log(arr1)
+// console.log(arr)
+
+
+// nested arrays copying 
+
+// let arr=[1,2,3,[4,5,6]]
+// console.log(arr[3])
+// let arr1=[...arr]
+// let arr1=Object.assign([],arr)
+// arr1.push(7,8,9)
+// console.log(arr)
+// console.log(arr1)
+
+
+//shallow copy obj
+// let obj={name:"lakshmi"}
+// let obj1=obj
+// obj1.name="yamini"
+// console.log(obj)
+// console.log(obj1)
+
+
+// deep copy obj
+// let obj={name:"lakshmi"}
+// // let obj1={...obj}
+// let obj1=Object.assign({},obj)
+// obj1.name="yamini"
+// console.log(obj)
+// console.log(obj1)
+
+// nested properties copying
+
+// let obj={name:"lakshmi", age:22, marks:[20,30,40]}
+// // let obj1={...obj}
+// let obj1=Object.assign({},obj)
+// // obj1.marks.push(70,80,90)
+// obj1.name="yamini"
+// console.log(obj)
+// console.log(obj1)
+
+
+// nested deep copy method
+
+// let arr=[1,2,3,[4,5,6],[7,8,9]]
+
+// // let arr1=[...arr] // deep copy in one layer
+// // let arr1=Object.assign([],arr) // deep copy in one  layer
+
+// let arr1=JSON.parse(JSON.stringify(arr)) ; // deep layer
+// arr1[3].push(11,22,33)
+// console.log(arr)
+// console.log(arr1)
+
+
+// let obj={
+//     name:"lakshmi",
+//     age:22,
+//     marks:[11,22,33]
+// }
+// // let obj1={...obj}
+// // let obj1=Object.assign({},obj)
+// let obj1=JSON.parse(JSON.stringify(obj))
+// obj1.name="yamini"
+// console.log(obj)
+// console.log(obj1)
+
+let arr=[[[[1,2,3,4,5,6]]]]
+
+// recursive function ==> function call by itself before execution
+
+// Array.isArray()
+
+// function flattenArr(s){
+//   let result=[]
+//   for(let i=0; i<s.length; i++){
+//       if(Array.isArray(s[i])){
+//         //   result.push(...flattenArr(s[i]))
+//         result=result.concat(flattenArr(s[i]))
+//       }else{
+//           result.push(s[i])
+//       }
+
+//   }
+//                     return result
+
+// }
+// console.log(flattenArr(arr))
+
+// arr=arr.flat(Infinity)
+// console.log(arr)
+
+
+<coding challange -->
+
+<!-- let arr=[1,1,2,2,3,3,4]
+
+let i=0; 
+let j=arr.length;
+while(i<j){
+    if(arr[i]==arr[i+1]){
+        arr.splice(i,1)
+        j--
+    }else{
+        i++
+    }
+}
+console.log(arr)
+
+// let result=arr.filter((item, index, self)=>{
+//     return self.indexOf(item) == index
+// })
+// console.log(result)
+// [1,2,3,4]
+
+// extra variable
+
+// let arr1=[] -->
+
+<!-- // for(let i=0; i<arr.length; i++){
+//     if(arr.indexOf(arr[i])===arr.lastIndexOf(arr[i])){
+//         arr1.push(arr[i])
+//     }
+// }
+// console.log(arr1) -->
+
+
+
+
+
+// let obj={name:"lakshmi", education:"agri"}
+// let obj1=Object.keys(obj)
+// let obj1=Object.values(obj)
+// let obj1=Object.entries(obj)
+// console.log(Object.fromEntries(obj1))
+
+// let obj2=new Map()
+
+// obj2.set("name","lakshmi")
+// obj2.set("age",23)
+// console.log(obj2.get("age"))
+<!-- --> 
