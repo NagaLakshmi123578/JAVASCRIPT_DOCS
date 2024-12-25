@@ -332,3 +332,28 @@ console.log(arr)
 // obj2.set("age",23)
 // console.log(obj2.get("age"))
 <!-- --> 
+
+<!-- 
+function* add(){
+    for(let i=0; i<5; i++){
+        console.log(i)
+        if(i==2){
+            console.log(i)
+        }
+        if(i==4){
+            console.log(i)
+            yield i;
+        }
+    }
+}
+
+let some = add()
+some.next()
+console.log(some.next(5))
+
+
+// next ==> to execute until next yield
+// return  ==> stop and give the values
+// throw  ==> to sendf errors
+
+-->
